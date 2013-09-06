@@ -1,0 +1,619 @@
+@CHARSET "UTF-8";
+
+body {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #888888;
+	font-family: 微软雅黑;
+}
+
+ul.link {
+	margin: 0;
+	list-style-type: none;
+}
+
+a {
+	color: #fff;
+	text-decoration: none; /*CSS下划线效果：无下划线*/
+}
+
+a:hover {
+	color: red;
+	text-decoration: none; /*CSS下划线效果：无下划线*/
+	border-bottom: 1px #0099CC dotted /*CSS加一个只有下边的框 边框为虚线*/
+}
+
+td {
+	color: #FFFFFF;
+}
+
+.main {
+	background-image: url(content/body.jpg);
+	clear: both;
+	position: relative;
+	overflow: auto;
+	height: auto;
+	min-height: 600px;
+}
+
+#top {
+	background-image: url(content/body.jpg);
+	background-repeat: repeat-y;
+}
+
+#bar {
+	height: 28px;
+	clear: both;
+	position: relative;
+	border-bottom: 1px solid #D2D2D2;
+	background-color: #777;
+}
+
+#bar-link {
+	float: left;
+}
+
+#bar-user {
+	float: right;
+}
+
+.link {
+	float: left;
+	padding: 6px 0 0 13px;
+}
+
+.link li {
+	float: left;
+	margin: 0 0 0 -10px;
+	padding: 0 21px 2px 12px;
+	position: relative;
+}
+
+.title {
+	
+}
+
+.title h1 {
+	color: #D2B48C;
+	font-family: KaiTi;
+	font-size: 48px;
+	margin: 25px 0 0 200px;
+	padding: 0;
+	text-align: center;
+}
+
+.tis {
+	text-align: center;
+	color: #999;
+}
+
+#register {
+	padding: 10px;
+	float: right;
+	margin: 50px 100px 0 0;
+	width: 500px;
+	/*
+	background: #666;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#666),
+		to(#505555) );
+	background: -moz-linear-gradient(top, #505555, #666, 100%);
+	*/
+	color: #FFFFFF;
+	font-size: 14px
+}
+
+#register li {
+	list-style: none;
+}
+
+#register form table {
+	text-align: center;
+	margin: auto;
+}
+
+#logIn {
+	padding: 10px;
+	float: right;
+	margin: 50px 60px 0 0;
+	width: 500px;
+	/*
+	background: #666;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#666),
+		to(#505555) );
+	background: -moz-linear-gradient(top, #505555, #666, 100%);
+	*/
+	color: #FFFFFF;
+	font-size: 14px
+}
+
+#logIn li {
+	list-style: none;
+}
+
+#logIn form table {
+	text-align: center;
+	margin: auto;
+}
+/**********************sendhtml.jsp***********************************************/
+#sendHtml {
+	padding: 10px 20px 10px 20px;
+	float: left;
+	margin: 0px 10px 20px 40px;
+	width: 410px;
+	background: #666;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#666),
+		to(#505555) );
+	background: -moz-linear-gradient(top, #505555, #666, 100%);
+	color: #FFFFFF;
+	font-size: 14px
+}
+
+#sendHtml ul {
+	padding-left: 0;
+}
+
+#sendHtml li {
+	list-style: none;
+	margin-left: 0px;
+}
+
+#sendHtml form table {
+	margin-left: 0px;
+}
+
+#editMailMessageNews {
+	float: left;
+	padding: 10px 20px 10px 20px;
+	margin: 0px 40px 20px 10px;
+	width: 410px;
+	background: #666;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#666),
+		to(#505555) );
+	background: -moz-linear-gradient(top, #505555, #666, 100%);
+	color: #FFFFFF;
+	font-size: 16px
+}
+
+.basicMailMessage {
+	margin: 0;
+	background-color: #CD853F;
+	font-size: 18px;
+	line-height: 150%;
+	margin: 0 0 10px 0;
+	padding-left: 20px;
+}
+
+.editMailMessageNews {
+	margin: 0 0 10px 0;
+	max-height: 250px;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+.editMailMessageNews table {
+	border-collapse: collapse;
+	border-color: #ffffff;
+	border-spacing: 10px 50px;
+	width: 410px;
+	text-align: center;
+}
+
+.editMailMessageNews td,th,tr {
+	border: 1px solid #888888;
+	height: 30px;
+	color: #ffffff;
+}
+
+
+.addOtherReceiver ul {
+	padding-left: 0;
+}
+
+.addOtherReceiver li {
+	list-style: none;
+	margin-left: 0px;
+}
+
+
+/***************************个人中心*******************************************/
+/*本来是想用于上传头像设置的
+#box {
+
+}
+*/
+.basicinf {
+	float: right;
+	margin: 50px 80px 10px 0;
+	/*background-color: #444444;*/
+}
+
+#user {
+	margin: 0;
+	width: 340px;
+	height: 141px;
+}
+
+#picture {
+	width: 105px;
+	height: 　140px;
+}
+
+.basicinf table {
+	border-collapse: collapse;
+	border-color: #ffffff;
+	border-spacing: 10px 50px;
+}
+
+.basicinf td,th,tr {
+	border: 1px solid #888888;
+	height: 30px;
+	color: #ffffff;
+}
+
+#modifyButton {
+	margin: 10px 5px 10px 5px;
+	font-family: 微软雅黑;
+	float: right;
+}
+
+#logoutButton {
+	margin: 10px 5px 10px 5px;
+	font-family: 微软雅黑;
+	float: right;
+}
+
+/*用户信息*/
+#usemessage {
+	clear: both;
+	margin: 0px 0px 10px 50px;
+	float: left;
+	width: 450px;
+	height: 500px;
+}
+
+.fenge {
+	margin: 0;
+	height: 20px;
+}
+
+.fenge img {
+	height: 20px;
+	width: 430px;
+}
+
+/*用户的使用信息*/
+#cencernmessage {
+	margin: 0px 50px 10px 0px;
+	float: left;
+	width: 450px;
+	height: 500px;
+	padding-bottom: 5px;
+}
+
+#mailPasswordSet {
+	width: 430px;
+	background: #444444;
+	margin: 5px 0 5px 0;
+}
+
+.user_title {
+	line-height: 28px;
+	padding: 2px 0 2px 10px;
+	margin: 0;
+	font-size: 16px;
+	color: #ffffff;
+	background: #333333;
+	font-weight: 600;
+}
+
+.user_para {
+	color: #00ff88;
+	padding: 2px 10px 2px 10px;
+	text-indent: 2em;
+	line-height: 150%;
+	margin: 0;
+	line-height: 150%;
+}
+
+.paraButton {
+	margin: 5px 5px 10px 350px;
+	font-family: 微软雅黑;
+}
+
+.para_setmes {
+	color: #ffffff;
+	padding: 2px 10px 10px 50px;
+	margin: 0;
+	line-height: 150%;
+}
+
+#user_friend {
+	width: 430px;
+	background: #444444;
+	margin: 5px 0 5px 0;
+	padding-bottom: 10px;
+}
+
+#contact_message {
+	margin: 5px 0 5px 50px;
+	width: 300px;
+	max-height: 250px;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+#contact_message table {
+	width: 300px;
+	border-collapse: collapse;
+	border-color: #ffffff;
+	border-spacing: 10px 50px;
+}
+
+#contact_message td {
+	border: 1px solid #888888;
+	color: #ffffff;
+	text-align: center;
+}
+
+#add_contactor {
+	border: 1px solid #888888;
+	width: 300px;
+	margin: 5px 2px 2px 50px;
+}
+
+#add_contactor ul {
+	margin: 10px 2px 2px 2px;
+}
+
+#add_contactor li {
+	list-style: none;
+	color: #ffffff;
+}
+
+.add_button {
+	margin: 2px 0px 2px 70px;
+}
+
+#love_set {
+	width: 430px;
+	background: #444444;
+	margin: 5px 0 5px 0;
+	padding-bottom: 10px;
+}
+
+.love_set_two {
+	margin: 4px;	
+	color: #ffffff;
+}
+
+.love_set_two .user_title{
+	font-weight: 400;
+	background-color: olive;
+}
+
+
+
+/**************************ground.jsp******************************************/
+#shownews {
+	clear: both;
+	margin: 10px 30px 30px 30px;
+}
+
+.newsTitle {
+	margin: 0;
+	padding: 3px 10px 3px 10px;
+	font-size: 24px;
+	font-weight: 600;
+	font-family: 宋体;
+	background-color: #CD853F;
+	color: #ffffff;
+	line-height: 150%;
+}
+
+.newsPra {
+	padding: 10px 10px 10px 10px;
+	line-height: 150%;
+	color: #ffffff;
+	font-size: 16px;
+	text-indent: 2em;
+	color: #ffffff;
+}
+
+.pairNews {
+	margin: 0px 0 10px 0;
+	background-color: #444444;
+}
+
+.pairNews table,td,th,tr {
+	border: none;
+}
+
+#newsChoose {
+	background-color: #2F4F4F;
+	margin: 10px 30px 0px 30px;
+	height: 34px;
+}
+
+#choose_CN {
+	margin: 0;
+	font-family: 宋体;
+	font-size: 26px;
+	font-weight: 600;
+	color: #ffffff;
+	padding: 2px 20px 2px 40px;
+	border-right: 1px solid #ffffff;
+	float: left;
+}
+
+#chooseButton {
+	font-family: 微软雅黑;
+	margin: 4px 20px 4px 20px;
+	float: left;
+}
+
+.pairNews a {
+	margin: 30px 10px 10px 10px;
+	TEXT-DECORATION: underline;
+}
+
+.mailLink {
+	float: left;
+	border-left: 1px solid #ffffff;
+	padding: 5px 5px 5px 20px;
+}
+
+.mailLink a {
+	text-decoration: underline;
+	font-size: 18px;
+}
+
+.addNewsToMail {
+	margin: 0;
+	padding: 3px 10px 3px 10px;
+	font-size: 16px;
+	background-color: olive;
+	color: #ffffff;
+	line-height: 150%;
+}
+
+.addNewsToMail p {
+	margin: 0;
+}
+
+/*************************home******************************************/
+.homeMessage {
+	margin: 80px 50px 50px 80px;
+}
+
+.homeMessage p {
+	margin-top: 4px;
+	padding: 20px 10px 20px 10px;
+	color: #ccffff;
+	text-indent: 2em;
+	font-size: 20px;
+	font-family: 宋体;
+	background-color: #444444;
+	line-height: 150%;
+}
+
+.homeMessage ul {
+	margin-top: 4px;
+	padding: 20px 10px 20px 20px;
+	color: #ccffff;
+	font-size: 20px;
+	font-family: 宋体;
+	background-color: #444444;
+	line-height: 150%;
+}
+
+.homeMessage a {
+	color: #FA8072;
+	text-decoration: underline;
+}
+
+.homeMessage a:hover {
+	color: red;
+	text-decoration: none; /*CSS下划线效果：无下划线*/
+	border-bottom: 1px #0099CC dotted /*CSS加一个只有下边的框 边框为虚线*/
+}
+
+#unlog {
+	margin-left: 100px;
+}
+
+#unlog .tis {
+	margin: 10px 0 0 10px;
+}
+
+.logMessage {
+	color: #ffffff;
+	margin-top: 200px;
+	font-size: 30px;
+}
+
+/* mod by starsasumi */
+#modify {
+	padding: 10px;
+	float: right;
+	margin: 50px 100px 0 0;
+	width: 500px;
+	/*
+	background: #666;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#666),
+		to(#505555) );
+	background: -moz-linear-gradient(top, #505555, #666, 100%);
+	*/
+	color: #FFFFFF;
+	font-size: 14px
+}
+
+#modify li {
+	list-style: none;
+}
+
+#modify form table {
+	text-align: center;
+	margin: auto;
+}
+/* mod end */
+.ShowMessage {
+	text-align: center;
+	font-size: 30px;
+	color: #ffffff;
+}
+/*************editMailMessage.jsp**************************************/
+.editMailMessageParaMessage {
+	margin: 30px 40px 20px 40px;
+}
+
+.editMailMessageParaMessage a {
+	text-decoration: underline;
+}
+
+.editMailMessageParaMessage p {
+	margin-top: 4px;
+	padding: 5px 10px 5px 10px;
+	color: #ccffff;
+	text-indent: 2em;
+	font-size: 20px;
+	font-family: 宋体;
+	background-color: #444444;
+	line-height: 150%;
+}
+
+#editChoosedNews {
+	float: left;
+	margin: 0 10px 0 40px;
+	width: 450px;
+}
+
+#ediUnchoosedNews {
+	float: left;
+	margin: 0 40px 0 10px;
+	width: 450px;
+}
+
+.editChoosedNewsFeng {
+	background-color: #444444;
+	margin: 0 0 2px 0;
+	padding: 3px 3px 3px 6px;
+}
+
+.editChoosedNewsFeng p {
+	margin: 0;
+	color: #ffffff;
+}
+
+.editChoosedNewsFengTitle {
+	margin: 0;
+	background-color: #CD853F;
+	padding-left: 20px;
+	color: #ffffff;
+	font-size: 18px;
+}
+
+.editNewsNotChoosed {
+	margin: 0 0 3px 0;
+	background-color: #555555;
+}

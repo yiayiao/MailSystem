@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>正则表达式-表单验证</title>
+		<script type = "text/javascript">
+			//初始化javascript函数调用
+			window.onload = function() {
+				document.getElementById("phone").onblur = function(evt) {
+					checkphone(this, document.getElementById('phone_help'));
+				}
+				document.getElementById("telephone").onblur = function(evt) {
+					checktelephone(this, document.getElementById('telephone_help'));
+				}
+				document.getElementById("email").onblur = function(evt) {
+					checkemail(this, document.getElementById('email_help'));
+				}
+				//结束标记
+				initSeats();
+			}
+			//非空检测
+			function validateNonEmpty(inputField, helpText) {
+				if(inputField.value.length == 0) {
+					if(helpText != null)
+						helpText.innerHTML = "Please entr a message.";
+					return false;
+				}
+				return true;
+			}
+			//正则表达式验证
+			function validateRegEx(regex, inputStr, helpText, helpMessage) {
+				if(!regex.test(inputStr)) {
+					if(helpText != null)
+						helpText.innerHTML = helpMessage;
+					return false;
+				}
+				else {
+					if(helpText != null)
+						helpText.innerHTML = "OK";
+					return true;
+				}
+			}
+			//验证表单数据
+			function checkphone(inputField, helpText) {
+				if(!validateNonEmpty(inputField, helpText))
+					return false;
+				var reg =  /^\d{4}-\d{8}$/;
+				var mes = "Please enter a phone num(4-8).";
+				if(!validateRegEx(reg, inputField.value, helpText, mes))
+					return false;
+				return ture;
+			}
+			function checktelephone(inputField, helpText) {
+				if(!validateNonEmpty(inputField, helpText))
+					return false;
+				var reg = /^\d{11}$/;
+				var mes = "Please enter a telephone num(11).";
+				if(!validateRegEx(reg, inputField.value, helpText, mes))
+					return false;
+				return ture;
+			}
+			function checkemail(inputField, helpText) {
+				if(!validateNonEmpty(inputField, helpText))
+					return false;
+				var reg = /^[\w\.-_\+]+@[\w-]+(\.\w{2,4})+$/;
+				var mes = "Please enter a email.";
+				if(!validateRegEx(reg, inputField.value, helpText, mes))
+					return false;
+				return ture;
+			}
+		</script>
+		<style type = "text/css">
+			body {
+				background: black;
+			}
+			#meslist {
+				padding: 10px;
+				margin-left: 20%;
+				margin-top: 10px;
+				width: 500px;
+				background: #333;
+   	 			background: -webkit-gradient(linear, 0 0, 0 100%, from(#505555), to(#333));
+				background: -moz-linear-gradient(top, #505555, #333 100%);
+				color: #888;
+    			font-family: Arial;
+    			font-size: 14px
+			}
+			#meslist li {
+				list-style: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id = "meslist">
+			<ul>
+				<li>
+					家庭电话:
+					<input id = "phone" name = "phone" type = "text" size = "20" />
+					<span id = "phone_help" class = "help"></span>
+				</li>
+				<li>
+					手机电话:
+					<input id = "telephone" name = "telephone" type = "text" size = "20" />
+					<span id = "telephone_help" class = "help"></span>
+				</li>
+				<li>
+					联系邮箱:
+					<input id = "email" name = "email" type = "text" size = "20" />
+					<span id = "email_help" class = "help"></span> 
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

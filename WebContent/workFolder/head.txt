@@ -1,0 +1,44 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>个性信息定制发布系统</title>
+<link type="text/css" rel="stylesheet" href="site.css">
+
+
+
+<div id="top">
+	<div id="bar">
+		<div id="bar-link">
+			<ul class="link">
+				<li><a href="home.jsp">首页</a></li>
+				<li><a href="newsCenter.jsp">新闻库</a></li>
+				<li><a href="SendHtml.jsp">发送邮件</a></li>
+			</ul>
+		</div>
+		<div id="bar-user">
+			<ul class="link">
+				<li><a href="register.jsp">用户注册</a></li>
+				<li>
+					<%
+					String userName = (String) session.getAttribute("userName");
+					if(userName != null)
+					{
+					%>
+						<a href="LeadtoUsercenter">欢迎您：<%=userName%></a>
+					<%				
+					}
+					else {
+					%>
+						<a href="logIn.jsp">用户登陆</a>
+					<%
+					}
+					%>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="main">
+	<div class="title">
+		<h1>个性信息定制发布系统</h1>
+	</div>
